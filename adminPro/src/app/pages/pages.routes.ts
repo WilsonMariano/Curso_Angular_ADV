@@ -7,6 +7,7 @@ import { Graficas1Component } from './graficas1/graficas1.component';
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
 
 import { LoginGuardGuard } from '../services/guards/login-guard.guard';
+import { ProfileComponent } from './profile/profile.component';
 
 
 
@@ -20,6 +21,7 @@ const pagesRoutes: Routes = [
             { path: 'progress',          component: ProgressComponent,         data: { titulo: 'Progress' }         },
             { path: 'graficas1',         component: Graficas1Component,        data: { titulo: 'Graficas' }         },
             { path: 'account-settings',  component: AccountSettingsComponent,  data: { titulo: 'Ajustes del tema' } },
+            { path: 'perfil',            component: ProfileComponent,          data: { titulo: 'Perfil de usuario'} },
             { path: '',                  redirectTo: '/dashboard',             pathMatch: 'full' }
         ]
     }
